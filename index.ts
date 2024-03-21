@@ -2,8 +2,8 @@
 
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
-  { message: "enter first number", type: "number", name: "firstnumber" },
-  { message: "enter second number", type: "number", name: "secondnumber" },
+  { message: "enter your first number", type: "number", name: "firstnumber" },
+  { message: "enter your second number", type: "number", name: "secondnumber" },
   {
     message: "select/choose one of the  operator to perform some actions",
     type: "list",
@@ -30,3 +30,4 @@ console.log(answer.firstnumber/answer.secondnumber);
     console.log("your choice is incorrect");
 }
 
+console.log("the end");
